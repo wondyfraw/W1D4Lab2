@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <title>Title</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">MUM Golden Domo Market::: &nbsp;&nbsp;&nbsp;| </a>
+    <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+            data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="navbar-brand" href="#">Products &nbsp;&nbsp;&nbsp;| </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Supplier</a>
+            </li>
+
+        </ul>
+        <!--<form class="form-inline my-2 my-lg-0">-->
+        <span class="navbar-text">Hello!</span>
+        <button class="btn btn-outline-success my-2 my-sm-0 bg-light" type="submit">Sign Out</button>
+        <!-- </form>-->
+    </div>
+</nav>
+
+<div class="container main-container-style">
+    <h2>New Product Form</h2><br/>
+    <form action="index.html" method="post">
+        <div class="form-row">
+            <div class="form-group col-6">
+                <label for="productNumInput">Product Number</label>
+                <input class="form-control" id="productNumInput" name="productNum" required title="Enter Product Number"
+                       type="text"/>
+            </div>
+            <div class="from-group col-6">
+                <label for="stockQntInput">Quantity in stock</label>
+                <input class="form-control" id="stockQntInput" name="stockQuant" required type="number" value="0">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-6">
+                <label for="nameInput">Name</label>
+                <input class="form-control" id="nameInput" name="name" required title="Enter Name" type="text"/>
+            </div>
+            <div class="from-group col-6">
+                <label for="supplierInput">Supplier</label>
+                <select class="form-control" id="supplierInput" name="supplier">
+                    <option selected value="">Select Supplier</option>
+                    <option value="Wolmart">Wolmart</option>
+                    <option value="Media World">Media World</option>
+                </select>
+            </div>
+            <div class="form-group col-6">
+                <label for="unitPriceInput">Unit Price</label>
+                <input class="form-control" id="unitPriceInput" name="unitPrice" required title="Enter Unit Price"
+                       type="number"
+                       value="0.0"/>
+            </div>
+            <div class="from-group col-6">
+                <label for="dateInput">Date supplied</label>
+                <input class="form-control" id="dateInput" name="suppliedDate" required type="date" value="yyyy-mm-dd">
+            </div>
+            <div class="form-group bottom-button">
+                <button class="btn btn-light rest-button" type="reset">Reset</button>
+                <button class="btn btn-danger cancel-button" type="submit">Cancel</button>
+                <button class="btn btn-primary submit-button" type="submit">Add Product</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script crossorigin="anonymous"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
