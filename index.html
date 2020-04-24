@@ -54,21 +54,22 @@
             </div>
             <div class="from-group col-6">
                 <label for="supplierInput">Supplier</label>
-                <select class="form-control" id="supplierInput" name="supplier">
+                <select class="form-control" id="supplierInput" name="supplier" required>
                     <option selected value="">Select Supplier</option>
                     <option value="Wolmart">Wolmart</option>
                     <option value="Media World">Media World</option>
                 </select>
             </div>
-            <div class="form-group col-6">
+            <div class="form-group col-md-6">
                 <label for="unitPriceInput">Unit Price</label>
                 <input class="form-control" id="unitPriceInput" name="unitPrice" required title="Enter Unit Price"
                        type="number"
                        value="0.0"/>
             </div>
-            <div class="from-group col-6">
+            <div class="from-group col-md-6">
                 <label for="dateInput">Date supplied</label>
-                <input class="form-control" id="dateInput" name="suppliedDate" required type="date" value="yyyy-mm-dd">
+                <input class="form-control" id="dateInput" name="suppliedDate" required type="date" value="yyyy-mm-dd"
+                    placeholder="yyyy-mm-dd" pattern="([12]\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01]))">
             </div>
             <div class="form-group bottom-button">
                 <button class="btn btn-light rest-button" type="reset">Reset</button>
@@ -79,6 +80,15 @@
     </form>
 </div>
 
+<hr/>
+<footer>
+    <a href="https://validator.w3.org/check/referer">
+        <img alt="HTMLValidator" src="http://mumstudents.org/cs472/2013-09/images/w3c-html.png">
+    </a>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img alt="CSS validator" src="http://mumstudents.org/cs472/2013-09/images/w3c-css.png">
+    </a>
+</footer>
 <script crossorigin="anonymous"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
